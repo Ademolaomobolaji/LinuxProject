@@ -11,7 +11,7 @@ In this project, I will:
 - Verify that the users were created successfully
 - Practice basic Linux user management commands
 
-## What is a User?
+## - User
  - A user account is used to provide security boundaries between different people and programs that can run commands.
 
  - They are three main types of user account: The super user, System user and Regular user.
@@ -67,11 +67,11 @@ You can diable user account by editing the passwd file or using the passwd comma
 
 - let's use the chage command, changing the expiry date of the user to a previous date. Also, it may be good to make a note on the account as to why we disabled it.
 
-- let's disable this user 'training' using chage command.
-- chage -E 2025-01-09 training 
+- let's disable this user 'Mark' using chage command.
+- chage -E 2025-01-09 Mark 
 
 - use the 'usermod' command to add note to the user profile 
-- sudo usermod -E "Adding this note to explain that training is on leave" training
+- sudo usermod -E "Adding this note to explain that Mark is on leave"
 
 ![alt text](image.png)
 
