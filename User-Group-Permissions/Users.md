@@ -49,7 +49,7 @@ The following user will be created:
 
 - Create users by using the useradd command >> useradd Training -c "training is a user in Marketing Department" 
 
-- assign password to the new user "training" >> sudo passwd Mark
+- assign password to the new user "training" >> sudo passwd training
 
 
 Use the `useradd` command to create the user:
