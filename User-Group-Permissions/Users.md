@@ -41,15 +41,15 @@ In this project, I will:
 
 The following user will be created:
 
-- Mark
+- training
 
 ---
 
-##### User (Mark)
+##### User (training)
 
-- Create users by using the useradd command >> useradd Mark -c "Mark Marketing Department" 
+- Create users by using the useradd command >> useradd training -c "training is a user in Marketing Department" 
 
-- assign password to the new user "Mark" >> sudo passwd Mark
+- assign password to the new user "training" >> sudo passwd training
 
 
 Use the `useradd` command to create the user:
@@ -58,8 +58,8 @@ Use the `userdel` command to delete a user.
 
 - To view the user we have created and check more information about user ID (UID) or user assigned group. you can use the 'id' or 'grep'command.
 
-- id Mark - shows user info
-- grep Mark /etc/passwd - return user information.
+- id training - shows user info
+- grep training /etc/passwd - return user information.
 
 ## Disabling User Account.
 
@@ -67,11 +67,11 @@ You can diable user account by editing the passwd file or using the passwd comma
 
 - let's use the chage command, changing the expiry date of the user to a previous date. Also, it may be good to make a note on the account as to why we disabled it.
 
-- let's disable this user 'Mark' using chage command.
-- chage -E 2025-01-09 Mark 
+- let's disable this user 'training' using chage command.
+- chage -E 2025-01-09 training 
 
 - use the 'usermod' command to add note to the user profile 
-- sudo usermod -E "Adding this note to explain that Mark is on leave"
+- sudo usermod -E "Adding this note to explain that training is on leave"
 
 ![alt text](image.png)
 
