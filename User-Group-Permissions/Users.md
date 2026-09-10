@@ -41,6 +41,7 @@ In this project, I will:
 
 The following user will be created:
 
+<<<<<<< HEAD
 - training
 
 ---
@@ -48,6 +49,15 @@ The following user will be created:
 ##### User (training)
 
 - Create users by using the useradd command >> useradd training -c "training is a user in Marketing Department" 
+=======
+- Training
+
+---
+
+##### User (Training)
+
+- Create users by using the useradd command >> useradd Training -c "training is a user in Marketing Department" 
+>>>>>>> cbe2423b186bfda94f994d14073200ee82271370
 
 - assign password to the new user "training" >> sudo passwd training
 
