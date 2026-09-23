@@ -18,7 +18,7 @@ SSH (Secure Shell) is a secure way to connect to and manage another computer ove
 - use the command $ id training to confirm the user account exists.
 - create a password for training with-  sudo passwd training 
 - go to your local machine (laptop) and type the command > ssh-keygen
-![alt text](<Screenshot 2026-09-23 151355.png>)
+![alt text](Keygen.png)
 - switch user on linux server to training and create a .ssh folder - mkdir .ssh
 - create a authentication_key file in .ssh folder and save the public key you generated from your local device in the authentication_key file.
 - run chmod 400 .ssh/authentication_key (set file to only be readable by training profile).
@@ -26,7 +26,8 @@ SSH (Secure Shell) is a secure way to connect to and manage another computer ove
 
 - goto the etc folder $ cd /etc/ssh 
 - view the files and folder in this directory with the ls command
-- ![alt text](<SSH folders.png>) 
+- ![alt text](<SSH folders.png>)
+
 -  Use Vi to view edit the sshd_config file 
 - ![alt text](set-passwordauthentication.png)
 - Make sure all the Passwordauthentication is set to yes
@@ -34,7 +35,7 @@ SSH (Secure Shell) is a secure way to connect to and manage another computer ove
 - Run sudo sshd -T | grep -i passwordauthentication to check the sshd server passwordauthentication configuration.
 - if it returns passwordauthentication no
 - run sudo grep -Rni "PasswordAuthentication" /etc/ssh/sshd_config /etc/ssh/sshd_config.d/ to check which directory is hosting the passwordauthentication configuration that needs to be changed.
-![alt text](passwordauthentication-No.png) 
+- ![alt text](passwordauthentication-No.png)
 - In this case, the /etc/ssh/sshd_config.d/50-cloud-init.conf file needs to be changed to yes
 - sudo vi /etc/ssh/sshd_config.d/50-cloud-init.conf
 - Edit passwordauthentication to yes and save.
@@ -45,6 +46,6 @@ SSH (Secure Shell) is a secure way to connect to and manage another computer ove
 
 - on your local bash - run ssh -i "serverprivatekey" training@serveripaddress/dns address.
 
-![alt text](<sign in training.png>)
+![User sign in successfully](<sign in training.png>)
 
 Successfully signed in training user using ssh connection.
