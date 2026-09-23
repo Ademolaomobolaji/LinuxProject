@@ -17,7 +17,8 @@ SSH (Secure Shell) is a secure way to connect to and manage another computer ove
 
 - use the command $ id training to confirm the user account exists.
 - create a password for training with-  sudo passwd training 
-- go to your local machine (laptop) and type the command > ssh-keygen
+- go to your local machine (laptop) and type the command 
+"ssh-keygen"
 ![alt text](Keygen.png)
 - switch user on linux server to training and create a .ssh folder - mkdir .ssh
 - create a authentication_key file in .ssh folder and save the public key you generated from your local device in the authentication_key file.
