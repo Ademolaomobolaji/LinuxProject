@@ -19,7 +19,7 @@ SSH (Secure Shell) is a secure way to connect to and manage another computer ove
 - create a password for training with-  sudo passwd training 
 - go to your local machine (laptop) and type the command 
 "ssh-keygen"
-![KeyGen](SSH-Administration/Screenshots/Keygen.png)
+- SSH-Administration/Screenshots/Keygen.png
 - switch user on linux server to training and create a .ssh folder - mkdir .ssh
 - create a authentication_key file in .ssh folder and save the public key you generated from your local device in the authentication_key file.
 - run chmod 400 .ssh/authentication_key (set file to only be readable by training profile).
